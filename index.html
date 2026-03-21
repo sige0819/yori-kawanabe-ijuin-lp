@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>川辺・伊集院の出張リラクゼーションYORI｜仕事終わりの疲れをご自宅で整える</title>
+  <meta name="description" content="南九州市川辺・日置市伊集院エリアの出張専門リラクゼーション「YORI」。現場仕事や長時間の運転による首・肩・腰・脚の疲れを、ご自宅でしっかり整えます。店舗への移動不要、出張費込みの分かりやすい料金体系（60分8,000円〜）。仕事終わりの夜や休日の身体メンテナンスに。" />
+  <meta name="keywords" content="川辺 出張マッサージ,伊集院 出張マッサージ,川辺 自宅 マッサージ,伊集院 自宅 リラクゼーション,南九州市 出張マッサージ,日置市 出張マッサージ,川辺 仕事終わり マッサージ,伊集院 腰 肩 マッサージ,出張リラクゼーション 鹿児島" />
+
+  <!-- OGP -->
+  <meta property="og:title" content="川辺・伊集院の出張リラクゼーションYORI｜仕事終わりの疲れをご自宅で整える" />
+  <meta property="og:description" content="南九州市川辺・日置市伊集院エリアの出張専門リラクゼーション。現場仕事や運転仕事の首・肩・腰・脚の疲れを、ご自宅でしっかり整えます。出張費込み60分8,000円〜。" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      color: #2c2c2c;
+      background: #fff;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ===== VARIABLES ===== */
+    :root {
+      --primary:   #3b5a4e;   /* 深緑 — 信頼・落ち着き */
+      --primary-light: #4e7a6a;
+      --accent:    #c8a96e;   /* ゴールドベージュ — 上質感 */
+      --accent-light: #e8d5b0;
+      --bg-warm:   #f8f5f0;   /* 温かみのある白 */
+      --bg-section:#f2ede6;
+      --text-dark: #1e1e1e;
+      --text-mid:  #4a4a4a;
+      --text-light:#7a7a7a;
+      --cta-line:  #06c755;   /* LINE green */
+      --cta-tel:   #3b5a4e;
+      --radius:    10px;
+      --shadow:    0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    /* ===== UTILITY ===== */
+    .container { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+    .section { padding: 56px 0; }
+    .section--alt { background: var(--bg-section); }
+    .section--dark { background: var(--primary); color: #fff; }
+    .section-label {
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.5;
+      color: var(--text-dark);
+      margin-bottom: 24px;
+    }
+    .section--dark .section-title { color: #fff; }
+    .section-title span { color: var(--accent); }
+    .divider {
+      width: 40px; height: 3px;
+      background: var(--accent);
+      margin: 12px 0 28px;
+      border-radius: 2px;
+    }
+    .text-center { text-align: center; }
+    .text-center .divider { margin-left: auto; margin-right: auto; }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      position: sticky; top: 0; z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid #e8e0d6;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .site-header__logo {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 0.08em;
+    }
+    .site-header__logo span {
+      font-size: 11px;
+      display: block;
+      color: var(--text-light);
+      font-weight: 400;
+      letter-spacing: 0.05em;
+    }
+    .header-cta {
+      background: var(--cta-line);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 9px 16px;
+      border-radius: 24px;
+      white-space: nowrap;
+    }
+
+    /* ===== HERO / FV ===== */
+    .hero {
+      background: linear-gradient(160deg, #2a3f37 0%, #3b5a4e 55%, #4e7a6a 100%);
+      color: #fff;
+      padding: 52px 20px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 260px; height: 260px;
+      background: radial-gradient(circle, rgba(200,169,110,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero__area-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(200,169,110,0.22);
+      border: 1px solid rgba(200,169,110,0.5);
+      color: var(--accent-light);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+    }
+    .hero__area-badge::before { content: '📍'; font-size: 13px; }
+    .hero__headline {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.55;
+      margin-bottom: 16px;
+      letter-spacing: 0.02em;
+    }
+    .hero__headline em {
+      font-style: normal;
+      color: var(--accent);
+    }
+    .hero__sub {
+      font-size: 14px;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 28px;
+    }
+    .hero__price-badge {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 4px;
+      background: #fff;
+      color: var(--primary);
+      border-radius: var(--radius);
+      padding: 10px 18px;
+      margin-bottom: 28px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+    .hero__price-badge .from { font-size: 12px; font-weight: 600; }
+    .hero__price-badge .price { font-size: 28px; font-weight: 800; }
+    .hero__price-badge .unit { font-size: 13px; font-weight: 600; }
+    .hero__price-badge .note { font-size: 11px; color: var(--text-light); margin-left: 4px; }
+    .hero__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+    .hero__tag {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: rgba(255,255,255,0.9);
+      font-size: 12px;
+      padding: 5px 11px;
+      border-radius: 20px;
+    }
+    .cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px 20px;
+      border-radius: var(--radius);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      border: none;
+      transition: opacity 0.2s, transform 0.15s;
+    }
+    .btn:active { transform: scale(0.98); opacity: 0.9; }
+    .btn--line {
+      background: var(--cta-line);
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(6,199,85,0.35);
+    }
+    .btn--tel {
+      background: #fff;
+      color: var(--primary);
+      border: 2px solid rgba(255,255,255,0.6);
+    }
+    .btn--primary {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: var(--shadow);
+    }
+    .btn--accent {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 4px 14px rgba(200,169,110,0.4);
+    }
+    .btn--outline {
+      background: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+    .btn-icon { font-size: 18px; }
+
+    /* ===== RECOMMEND ===== */
+    .recommend-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .recommend-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--accent);
+    }
+    .recommend-item__icon {
+      font-size: 22px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .recommend-item__text {
+      font-size: 15px;
+      line-height: 1.65;
+      color: var(--text-dark);
+      font-weight: 500;
+    }
+
+    /* ===== REASONS ===== */
+    .reason-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .reason-item {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 22px 20px;
+      box-shadow: var(--shadow);
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .reason-item__num {
+      flex-shrink: 0;
+      width: 40px; height: 40px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 800;
+    }
+    .reason-item__body {}
+    .reason-item__title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+    .reason-item__desc {
+      font-size: 14px;
+      color: var(--text-mid);
+      line-height: 1.7;
+    }
+
+    /* ===== COURSES ===== */
+    .course-note {
+      font-size: 13px;
+      color: var(--text-mid);
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+    .course-upsell {
+      background: var(--bg-warm);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 14px 16px;
+      font-size: 13px;
+      color: var(--text-mid);
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+    .course-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .course-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      border: 2px solid transparent;
+    }
+    .course-card--recommended {
+      border-color: var(--accent);
+      position: relative;
+    }
+    .course-card__badge {
+      position: absolute;
+      top: 0; right: 0;
+      background: var(--accent);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 0 0 0 var(--radius);
+      letter-spacing: 0.05em;
+    }
+    .course-card__header {
+      padding: 20px 20px 14px;
+      border-bottom: 1px solid #f0ebe3;
+    }
+    .course-card__label {
+      font-size: 11px;
+      color: var(--text-light);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .course-card__name {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 10px;
+    }
+    .course-card--recommended .course-card__name { color: var(--primary); }
+    .course-card__price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+    .course-card__price {
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .course-card__price-unit { font-size: 14px; font-weight: 600; color: var(--text-mid); }
+    .course-card__price-note {
+      font-size: 12px;
+      background: var(--bg-section);
+      color: var(--primary);
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    .course-card__body { padding: 16px 20px 20px; }
+    .course-card__desc {
+      font-size: 14px;
+      color: var(--text-mid);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .course-card__cta {
+      width: 100%;
+      padding: 13px;
+      font-size: 14px;
+    }
+
+    /* ===== AREA APPEAL ===== */
+    .appeal-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .appeal-card {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: var(--radius);
+      padding: 18px 14px;
+      text-align: center;
+    }
+    .appeal-card__icon { font-size: 28px; margin-bottom: 8px; }
+    .appeal-card__text { font-size: 13px; line-height: 1.6; color: rgba(255,255,255,0.9); font-weight: 500; }
+    .appeal-body {
+      font-size: 15px;
+      line-height: 1.9;
+      color: rgba(255,255,255,0.88);
+    }
+    .appeal-body strong { color: var(--accent); }
+
+    /* ===== AREA MAP ===== */
+    .area-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .area-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      box-shadow: var(--shadow);
+    }
+    .area-item__pin { font-size: 18px; }
+    .area-item__name { font-size: 15px; font-weight: 700; color: var(--primary); }
+    .area-item__detail { font-size: 13px; color: var(--text-mid); }
+    .area-note {
+      font-size: 13px;
+      color: var(--text-mid);
+      line-height: 1.7;
+      background: var(--bg-warm);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+    }
+
+    /* ===== FLOW ===== */
+    .flow-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+    }
+    .flow-step {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      position: relative;
+      padding-bottom: 28px;
+    }
+    .flow-step:last-child { padding-bottom: 0; }
+    .flow-step__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .flow-step__num {
+      width: 40px; height: 40px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .flow-step__line {
+      width: 2px;
+      flex: 1;
+      background: var(--accent-light);
+      margin-top: 6px;
+      min-height: 24px;
+    }
+    .flow-step:last-child .flow-step__line { display: none; }
+    .flow-step__body { padding-top: 8px; }
+    .flow-step__title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 4px;
+    }
+    .flow-step__desc {
+      font-size: 13px;
+      color: var(--text-mid);
+      line-height: 1.7;
+    }
+
+    /* ===== FAQ ===== */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .faq-item {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 18px 18px 18px 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: 1.55;
+      position: relative;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: '+';
+      position: absolute;
+      right: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      color: var(--primary);
+      font-weight: 300;
+      transition: transform 0.2s;
+    }
+    .faq-item[open] summary::after {
+      content: '−';
+    }
+    .faq-q-icon {
+      flex-shrink: 0;
+      width: 24px; height: 24px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 800;
+      margin-top: 1px;
+    }
+    .faq-answer {
+      padding: 0 20px 18px 56px;
+      font-size: 14px;
+      color: var(--text-mid);
+      line-height: 1.8;
+      border-top: 1px solid #f0ebe3;
+      padding-top: 14px;
+    }
+
+    /* ===== FINAL CTA ===== */
+    .final-cta {
+      background: linear-gradient(160deg, #1e3028 0%, #2a3f37 100%);
+      color: #fff;
+      padding: 56px 20px;
+      text-align: center;
+    }
+    .final-cta__headline {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+    .final-cta__headline em { font-style: normal; color: var(--accent); }
+    .final-cta__sub {
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+    .final-cta .cta-group { max-width: 400px; margin: 0 auto; }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      background: #1a2820;
+      color: rgba(255,255,255,0.6);
+      padding: 32px 20px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.9;
+    }
+    .site-footer__logo {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+      letter-spacing: 0.08em;
+    }
+    .site-footer__note {
+      font-size: 11px;
+      color: rgba(255,255,255,0.4);
+      margin-top: 16px;
+    }
+
+    /* ===== STICKY BOTTOM CTA (mobile) ===== */
+    .sticky-cta {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 200;
+      background: #fff;
+      border-top: 1px solid #e0d8cc;
+      padding: 10px 16px 14px;
+      display: flex;
+      gap: 10px;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+    }
+    .sticky-cta .btn { flex: 1; padding: 13px 8px; font-size: 13px; }
+    body { padding-bottom: 80px; }
+
+    /* ===== SECTION INTRO TEXT ===== */
+    .section-intro {
+      font-size: 15px;
+      color: var(--text-mid);
+      line-height: 1.85;
+      margin-bottom: 28px;
+    }
+
+    /* ===== CATCHCOPY STRIP ===== */
+    .catchcopy-strip {
+      background: var(--accent);
+      color: #fff;
+      text-align: center;
+      padding: 16px 20px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      line-height: 1.6;
+    }
+
+    /* ===== MEDIA ===== */
+    @media (min-width: 480px) {
+      .hero__headline { font-size: 30px; }
+      .appeal-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 680px) {
+      .sticky-cta { max-width: 680px; left: 50%; transform: translateX(-50%); border-left: 1px solid #e0d8cc; border-right: 1px solid #e0d8cc; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="site-header__logo">
+      リラクゼーション YORI
+      <span>川辺・伊集院エリア 出張専門</span>
+    </div>
+    <a href="#cta-line" class="header-cta">空き確認</a>
+  </header>
+
+  <!-- ===== CATCHCOPY STRIP ===== -->
+  <div class="catchcopy-strip">
+    帰宅後そのまま、至福のメンテナンス。移動ゼロの出張リラクゼーション。
+  </div>
+
+  <!-- ===== HERO / FV ===== -->
+  <section class="hero" id="top">
+    <div class="container">
+      <div class="hero__area-badge">川辺・伊集院エリア 出張対応</div>
+
+      <h1 class="hero__headline">
+        仕事終わりの重たい<br>
+        <em>首・肩・腰・脚</em>を、<br>
+        帰宅後そのまま<br>
+        自宅で整える。
+      </h1>
+
+      <p class="hero__sub">
+        現場仕事や長時間の運転で蓄積した疲れに。<br>
+        店舗への移動なし。ご自宅・滞在先へ直接お伺いする、<br>
+        出張専門のリラクゼーションサービスです。
+      </p>
+
+      <div class="hero__price-badge">
+        <span class="from">60分</span>
+        <span class="price">8,000</span>
+        <span class="unit">円〜</span>
+        <span class="note">出張費込み</span>
+      </div>
+
+      <div class="hero__tags">
+        <span class="hero__tag">🏠 自宅・滞在先で完結</span>
+        <span class="hero__tag">🚗 移動不要</span>
+        <span class="hero__tag">💴 出張費込み総額</span>
+        <span class="hero__tag">🔧 現場仕事の疲れに</span>
+      </div>
+
+      <div class="cta-group">
+        <a href="#cta-line" class="btn btn--line" id="cta-line">
+          <span class="btn-icon">💬</span>LINEで今すぐ空き状況を確認する
+        </a>
+        <a href="tel:XXXXXXXXXX" class="btn btn--tel">
+          <span class="btn-icon">📞</span>お電話でのご予約はこちら
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RECOMMEND ===== -->
+  <section class="section section--alt" id="recommend">
+    <div class="container">
+      <span class="section-label">こんな方へ</span>
+      <h2 class="section-title">「今日こそしっかり<span>疲れを取りたい</span>」<br>そんな方におすすめです</h2>
+      <div class="divider"></div>
+
+      <div class="recommend-list">
+        <div class="recommend-item">
+          <div class="recommend-item__icon">🔨</div>
+          <div class="recommend-item__text">建設・土木・設備など現場仕事で、首や肩、腰がガチガチにつらい</div>
+        </div>
+        <div class="recommend-item">
+          <div class="recommend-item__icon">🚛</div>
+          <div class="recommend-item__text">長時間の運転や配送業務で、脚や腰が重だるい</div>
+        </div>
+        <div class="recommend-item">
+          <div class="recommend-item__icon">🌾</div>
+          <div class="recommend-item__text">農作業や屋外作業のあと、全身をしっかり整えたい</div>
+        </div>
+        <div class="recommend-item">
+          <div class="recommend-item__icon">🏠</div>
+          <div class="recommend-item__text">仕事終わりに外へ出る気力がなく、自宅でそのまま受けたい</div>
+        </div>
+        <div class="recommend-item">
+          <div class="recommend-item__icon">🛌</div>
+          <div class="recommend-item__text">施術後はそのままゆっくり休みたい。移動が面倒だと感じる</div>
+        </div>
+        <div class="recommend-item">
+          <div class="recommend-item__icon">📅</div>
+          <div class="recommend-item__text">休日に、身体をじっくりリセットしてコンディションを整えたい</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REASONS ===== -->
+  <section class="section" id="reasons">
+    <div class="container">
+      <span class="section-label">選ばれる理由</span>
+      <h2 class="section-title">働く大人のための<br>出張リラクゼーション「<span>YORI</span>」</h2>
+      <div class="divider"></div>
+
+      <div class="reason-list">
+        <div class="reason-item">
+          <div class="reason-item__num">1</div>
+          <div class="reason-item__body">
+            <div class="reason-item__title">ご自宅・滞在先で完結。移動の手間がありません</div>
+            <div class="reason-item__desc">施術後はそのまま眠ることも可能です。着替えて車を出して店舗へ行く必要は一切ありません。疲れた身体に、移動ゼロの全身リカバリーをお届けします。</div>
+          </div>
+        </div>
+        <div class="reason-item">
+          <div class="reason-item__num">2</div>
+          <div class="reason-item__body">
+            <div class="reason-item__title">現場仕事・運転仕事の頑固な疲れにアプローチ</div>
+            <div class="reason-item__desc">日中身体を酷使するお仕事の方に合わせた、首・肩・腰・脚をしっかり整える施術が好評です。「一晩寝ても抜けない疲れ」を感じている方にこそ、ご利用いただきたいサービスです。</div>
+          </div>
+        </div>
+        <div class="reason-item">
+          <div class="reason-item__num">3</div>
+          <div class="reason-item__body">
+            <div class="reason-item__title">出張費込みの分かりやすい料金体系</div>
+            <div class="reason-item__desc">川辺・伊集院エリアへの出張費はすべてコース料金に含まれています。「交通費が別途かかる」といった心配なく、安心してご利用いただけます。</div>
+          </div>
+        </div>
+        <div class="reason-item">
+          <div class="reason-item__num">4</div>
+          <div class="reason-item__body">
+            <div class="reason-item__title">仕事終わりや休日に利用しやすい時間帯</div>
+            <div class="reason-item__desc">夕方以降のご予約にも対応しております。「今夜受けたい」と思ったときに、まずはお気軽にご連絡ください。</div>
+          </div>
+        </div>
+        <div class="reason-item">
+          <div class="reason-item__num">5</div>
+          <div class="reason-item__body">
+            <div class="reason-item__title">落ち着いて、静かに受けられる環境</div>
+            <div class="reason-item__desc">見知らぬ人と同じ空間になることなく、ご自宅のプライベートな環境でリラックスして施術を受けていただけます。しっかり受けたい大人の方に選ばれています。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COURSES ===== -->
+  <section class="section section--alt" id="courses">
+    <div class="container">
+      <span class="section-label">コース紹介</span>
+      <h2 class="section-title">ご自身の疲れに合わせて<br>選べる<span>3つのコース</span></h2>
+      <div class="divider"></div>
+
+      <p class="course-note">すべてのコースは出張費込みの総額表示です。記載の料金以外に追加費用はかかりません。</p>
+
+      <div class="course-upsell">
+        まずは60分で全体の疲れを整えるのもよいですが、首・肩・腰・脚まで全身をしっかり受けたい方には、<strong>90分コースが一番選ばれています。</strong>
+      </div>
+
+      <div class="course-cards">
+
+        <!-- 60min -->
+        <div class="course-card">
+          <div class="course-card__header">
+            <div class="course-card__label">60 min</div>
+            <div class="course-card__name">仕事終わりリセット</div>
+            <div class="course-card__price-row">
+              <span class="course-card__price">8,000</span>
+              <span class="course-card__price-unit">円</span>
+              <span class="course-card__price-note">出張費込み</span>
+            </div>
+          </div>
+          <div class="course-card__body">
+            <p class="course-card__desc">仕事終わりの疲れを整える基本コース。まずは首・肩・腰まわりを中心に、帰宅後にゆっくり休みたい方へ。「まず試してみたい」という方にも選ばれています。</p>
+            <a href="#cta-line" class="btn btn--outline course-card__cta">このコースで予約する</a>
+          </div>
+        </div>
+
+        <!-- 90min RECOMMENDED -->
+        <div class="course-card course-card--recommended" style="position:relative;">
+          <div class="course-card__badge">★ おすすめ</div>
+          <div class="course-card__header">
+            <div class="course-card__label">90 min</div>
+            <div class="course-card__name">全身しっかりリカバリー</div>
+            <div class="course-card__price-row">
+              <span class="course-card__price">11,000</span>
+              <span class="course-card__price-unit">円</span>
+              <span class="course-card__price-note">出張費込み</span>
+            </div>
+          </div>
+          <div class="course-card__body">
+            <p class="course-card__desc">首・肩・腰・脚まで全身をしっかり整えたい方におすすめ。現場仕事や長時間運転の疲れが気になる方へ。「60分では物足りなかった」という方に、一番選ばれているコースです。脚の重さや腰の辛さが特に気になる方にも最適です。</p>
+            <a href="#cta-line" class="btn btn--accent course-card__cta">このコースで予約する（おすすめ）</a>
+          </div>
+        </div>
+
+        <!-- 120min -->
+        <div class="course-card">
+          <div class="course-card__header">
+            <div class="course-card__label">120 min</div>
+            <div class="course-card__name">集中プレミアムケア</div>
+            <div class="course-card__price-row">
+              <span class="course-card__price">14,000</span>
+              <span class="course-card__price-unit">円</span>
+              <span class="course-card__price-note">出張費込み</span>
+            </div>
+          </div>
+          <div class="course-card__body">
+            <p class="course-card__desc">疲労感が強い方、全身を長めにしっかり受けたい方へ。休日の身体メンテナンスにも最適な、贅沢なロングコースです。「今週は特に疲れた」という週末に、ご自身へのご褒美として。</p>
+            <a href="#cta-line" class="btn btn--outline course-card__cta">このコースで予約する</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AREA APPEAL ===== -->
+  <section class="section section--dark" id="appeal">
+    <div class="container">
+      <span class="section-label" style="color:var(--accent-light);">川辺・伊集院の方へ</span>
+      <h2 class="section-title" style="color:#fff;">川辺・伊集院で働くあなたの、<br>毎日のコンディションを<span>支えたい。</span></h2>
+      <div class="divider"></div>
+
+      <div class="appeal-grid">
+        <div class="appeal-card">
+          <div class="appeal-card__icon">🔧</div>
+          <div class="appeal-card__text">現場仕事・<br>力仕事のあとに</div>
+        </div>
+        <div class="appeal-card">
+          <div class="appeal-card__icon">🚛</div>
+          <div class="appeal-card__text">長時間運転・<br>配送のあとに</div>
+        </div>
+        <div class="appeal-card">
+          <div class="appeal-card__icon">🌾</div>
+          <div class="appeal-card__text">農作業・<br>屋外作業のあとに</div>
+        </div>
+        <div class="appeal-card">
+          <div class="appeal-card__icon">📅</div>
+          <div class="appeal-card__text">休日の<br>身体メンテナンスに</div>
+        </div>
+      </div>
+
+      <p class="appeal-body">
+        農作業や土木、建設などの現場仕事。あるいは、長時間の運転や配送業務。<br>
+        日々身体を動かして働く皆様の疲れは、<strong>一晩寝ただけではなかなか抜けきらない</strong>ものです。<br><br>
+        「YORI」は、そんな川辺・伊集院エリアで働く皆様の生活圏へ直接お伺いします。<br>
+        帰宅後、わざわざ車を出してマッサージ店へ行く必要はありません。<br>
+        ご自宅でリラックスした状態のまま、プロの施術でしっかりと身体を整え、<strong>明日の活力へとつなげます。</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== AREA ===== -->
+  <section class="section" id="area">
+    <div class="container">
+      <span class="section-label">対応エリア</span>
+      <h2 class="section-title">出張対応エリア</h2>
+      <div class="divider"></div>
+
+      <p class="section-intro">南九州市川辺周辺・日置市伊集院周辺を中心に、ご自宅やご滞在先へ出張いたします。川辺・伊集院エリアでの出張リラクゼーション・自宅マッサージをお探しの方は、まずはお気軽にご相談ください。</p>
+
+      <div class="area-list">
+        <div class="area-item">
+          <div class="area-item__pin">📍</div>
+          <div>
+            <div class="area-item__name">川辺エリア（南九州市川辺町周辺）</div>
+            <div class="area-item__detail">川辺町・清水町・頴娃町など南九州市内</div>
+          </div>
+        </div>
+        <div class="area-item">
+          <div class="area-item__pin">📍</div>
+          <div>
+            <div class="area-item__name">伊集院エリア（日置市伊集院周辺）</div>
+            <div class="area-item__detail">伊集院町・東市来町・日吉町など日置市内</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="area-note">
+        ※上記エリア以外でも、近隣への出張はご相談ください。まずはLINEまたはお電話にてお問い合わせいただけますと幸いです。
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FLOW ===== -->
+  <section class="section section--alt" id="flow">
+    <div class="container">
+      <span class="section-label">ご利用の流れ</span>
+      <h2 class="section-title">ご予約から施術まで、<br><span>5ステップ</span>で完結</h2>
+      <div class="divider"></div>
+
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="flow-step__left">
+            <div class="flow-step__num">1</div>
+            <div class="flow-step__line"></div>
+          </div>
+          <div class="flow-step__body">
+            <div class="flow-step__title">ご予約</div>
+            <div class="flow-step__desc">LINEまたはお電話にて、ご希望の日時・コースをお知らせください。当日のご予約も空き状況次第で承ります。</div>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step__left">
+            <div class="flow-step__num">2</div>
+            <div class="flow-step__line"></div>
+          </div>
+          <div class="flow-step__body">
+            <div class="flow-step__title">ご住所・滞在先のご確認</div>
+            <div class="flow-step__desc">ご自宅や滞在先のご住所、駐車場の有無をお伺いします。</div>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step__left">
+            <div class="flow-step__num">3</div>
+            <div class="flow-step__line"></div>
+          </div>
+          <div class="flow-step__body">
+            <div class="flow-step__title">セラピストがご到着</div>
+            <div class="flow-step__desc">ご予約の時間に、セラピストがお伺いいたします。</div>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step__left">
+            <div class="flow-step__num">4</div>
+            <div class="flow-step__line"></div>
+          </div>
+          <div class="flow-step__body">
+            <div class="flow-step__title">ご自宅・滞在先で施術</div>
+            <div class="flow-step__desc">リラックスできるご自宅の環境で、じっくりと身体を整えます。施術後はそのままお休みいただけます。</div>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-step__left">
+            <div class="flow-step__num">5</div>
+            <div class="flow-step__line"></div>
+          </div>
+          <div class="flow-step__body">
+            <div class="flow-step__title">お支払い</div>
+            <div class="flow-step__desc">施術後、現金または各種キャッシュレス決済にてお支払いください。出張費は料金に含まれています。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <span class="section-label">よくあるご質問</span>
+      <h2 class="section-title">ご予約前に<br>よく寄せられるご質問</h2>
+      <div class="divider"></div>
+
+      <div class="faq-list">
+
+        <details class="faq-item">
+          <summary>
+            <div class="faq-q-icon">Q</div>
+            自宅でも利用できますか？
+          </summary>
+          <div class="faq-answer">
+            はい、当サービスは<strong>出張専門</strong>のリラクゼーションです。お客様のご自宅やご滞在先へ直接お伺いして施術を行います。店舗へご来店いただく必要はございません。
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <div class="faq-q-icon">Q</div>
+            店舗に行く必要はありますか？
+          </summary>
+          <div class="faq-answer">
+            いいえ、当サービスは「出張専門」となりますので、お客様にご足労いただくことは一切ございません。ご自宅や滞在先でそのままお受けいただけます。
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <div class="faq-q-icon">Q</div>
+            仕事終わりや現場仕事の疲れには何分がおすすめですか？
+          </summary>
+          <div class="faq-answer">
+            首・肩・腰・脚まで全身をしっかり整えられる<strong>【90分コース（全身しっかりリカバリー）】</strong>が一番のおすすめです。現場仕事や長時間の運転で蓄積した疲れに、しっかりとアプローチいたします。まず試してみたい方には60分コースもご用意しています。
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <div class="faq-q-icon">Q</div>
+            何分コースがおすすめですか？
+          </summary>
+          <div class="faq-answer">
+            まずは基本の<strong>60分コース</strong>で全体の疲れを整えるのも良いですが、より深いリラックスと全身のリカバリーをお求めなら<strong>90分コース</strong>が満足度が高く人気です。「60分では物足りなかった」というお声も多くいただきますので、迷われる場合は90分をおすすめします。
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <div class="faq-q-icon">Q</div>
+            当日予約は可能ですか？
+          </summary>
+          <div class="faq-answer">
+            はい、空き状況次第で当日のご予約も承っております。お仕事終わりに「今夜受けたい」と思われた際も、まずはお気軽にLINEまたはお電話でご連絡ください。
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <div class="faq-q-icon">Q</div>
+            男性も利用できますか？
+          </summary>
+          <div class="faq-answer">
+            もちろんご利用いただけます。現場職や運転業務など、日頃から身体を酷使されている男性のお客様にも多くご利用いただいております。
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <div class="faq-q-icon">Q</div>
+            出張費はかかりますか？
+          </summary>
+          <div class="faq-answer">
+            川辺・伊集院エリアへの出張費は、すべてコース料金（60分8,000円〜）に含まれております。記載の料金以外に交通費などを別途いただくことはございません。
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <div class="faq-q-icon">Q</div>
+            家族が代わりに予約しても大丈夫ですか？
+          </summary>
+          <div class="faq-answer">
+            はい、奥様やご家族様からの代理予約も大歓迎です。「いつも頑張っている家族にプレゼントしたい」といったご要望にもお応えいたします。
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="final-cta" id="final-cta">
+    <div class="container">
+      <h2 class="final-cta__headline">
+        今夜、ご自宅で<br>
+        <em>プロの施術</em>を受けてみませんか？
+      </h2>
+      <p class="final-cta__sub">
+        仕事終わりの重たい身体。そのまま我慢せず、<br>
+        今夜はご自宅でゆっくりと整えましょう。<br>
+        まずは空き状況をご確認ください。
+      </p>
+      <div class="cta-group">
+        <a href="#cta-line" class="btn btn--line">
+          <span class="btn-icon">💬</span>LINEで今すぐ空き状況を確認する
+        </a>
+        <a href="tel:XXXXXXXXXX" class="btn btn--tel" style="color:var(--primary); background:#fff;">
+          <span class="btn-icon">📞</span>お電話でのご予約はこちら
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="site-footer__logo">リラクゼーション YORI</div>
+    <div>川辺・伊集院エリア 出張専門リラクゼーション</div>
+    <div>南九州市川辺 / 日置市伊集院 対応</div>
+    <div class="site-footer__note">
+      ※当サービスはリラクゼーション（非医療）サービスです。医療行為や治療を目的とするものではありません。<br>
+      © リラクゼーション YORI All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- ===== STICKY BOTTOM CTA ===== -->
+  <div class="sticky-cta">
+    <a href="#cta-line" class="btn btn--line">
+      <span class="btn-icon">💬</span>LINE予約
+    </a>
+    <a href="tel:XXXXXXXXXX" class="btn btn--primary">
+      <span class="btn-icon">📞</span>電話予約
+    </a>
+  </div>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // FAQ: close others on open
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('toggle', function() {
+        if (this.open) {
+          document.querySelectorAll('.faq-item[open]').forEach(other => {
+            if (other !== this) other.removeAttribute('open');
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
